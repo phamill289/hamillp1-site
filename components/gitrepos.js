@@ -16,6 +16,7 @@ export function Gitrepos(props) {
     const { data: data, error: error } = useSWR('https://api.github.com/users/phamill289/repos', fetcher)
     const { data: sjrail, error: sjrailerror } = useSWR('https://api.github.com/repos/phamill289/sjrail-openlayers', fetcher)
     const { data: user, error: usererror } = useSWR('https://api.github.com/users/phamill289', fetcher)
+    const { data: site, error: siteerror } = useSWR('https://api.github.com/repos/phamill289/hamillp1-site', fetcher)
     if (error) return <div> &apos; data. An error has occurred.&apos; </div>;
     if (!data) return <div>  &apos; Loading...&apos;</div>;
 
@@ -59,13 +60,13 @@ export function Gitrepos(props) {
             <GridItem colStart={1} colEnd={6} h='600' bg='#373A40' rounded='md'>
 
                 <Grid templateColumns={'repeat(3, 1fr)'} gap={15} padding='8px'>
-                    <Link href={data[1].html_url}>
+                    <Link href={data[2].html_url}>
                         <a>
                             <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
 
                                 <Text textColor={'white'} fontSize='20px' paddingLeft={'5px'}>
 
-                                    {data[1].name}
+                                    {data[2].name}
 
                                 </Text>
 
@@ -81,6 +82,27 @@ export function Gitrepos(props) {
                         </a>
                     </Link>
 
+                    <Link href={data[0].html_url}>
+                        <a>
+                            <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
+
+                                <Text textColor={'white'} fontSize='20px' paddingLeft={'5px'}>
+
+                                    {data[0].name}
+
+                                </Text>
+
+                                <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
+                                    subscribers: {site.subscribers_count}
+
+                                </Text>
+                                <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
+                                    watchers: {site.watchers_count}
+                                </Text>
+                            </GridItem>
+
+                        </a>
+                    </Link>
 
                     <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
 

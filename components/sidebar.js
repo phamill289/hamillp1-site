@@ -17,7 +17,7 @@ export function Sidebar() {
 
                 <Text  >Patrick Hamill</Text>
                 <Text >hamillp1@go.stockton.edu</Text>
-                <Text >asdafgawfwgawwafaw</Text>
+                <Text >portfolio website</Text>
                 <HStack >
                     <Link href='https://github.com/phamill289'>
                         <a>
