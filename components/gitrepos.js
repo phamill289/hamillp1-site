@@ -61,7 +61,7 @@ export function Gitrepos(props) {
                 <Grid templateColumns={'repeat(3, 1fr)'} gap={15} padding='8px'>
                     <Link href={data[1].html_url}>
                         <a>
-                            <GridItem h='130' bg='orange.400' border='1px' rounded={'xl'} >
+                            <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
 
                                 <Text textColor={'white'} fontSize='20px' paddingLeft={'5px'}>
 
@@ -82,7 +82,7 @@ export function Gitrepos(props) {
                     </Link>
 
 
-                    <GridItem h='130' bg='orange.400' border='1px' rounded={'xl'} >
+                    <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
 
                         <Text textColor={'white'} fontSize='20px' paddingLeft={'5px'}>
 
@@ -97,7 +97,7 @@ export function Gitrepos(props) {
                          
                     </GridItem>
 
-                    <GridItem h='130' bg='orange.400' border='1px' rounded={'xl'} >
+                    <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
 
                         <Text textColor={'white'} fontSize='20px' paddingLeft={'5px'}>
 

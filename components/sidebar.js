@@ -7,7 +7,7 @@ export function Sidebar() {
     return (
 // bg='#909296'
 // bg='orange.400'
-        <Center w='30%' bg='orange.400' alignItems="center" p={25} fontFamily='Inconsolata' fontStyle='normal' fontWeight='bold' >
+        <Center w='30%' bg='#ED8936' alignItems="center" p={25} fontFamily='Inconsolata' fontStyle='normal' fontWeight='bold' >
 
             <Stack alignContent='center' textAlign='center' >
 

@@ -28,7 +28,7 @@ export default function Home() {
     <Flex height="100vh" fontFamily='Inconsolata' fontStyle='normal' fontWeight='bold' >
 
       <Sidebar />
-      <Container maxW='100%' background="#25262B" paddingInlineStart={0}>
+      <Container maxW='100%' background="#1A1B1E" paddingInlineStart={0}>
       
         {/* <Cards /> */}
         <Navbar/>
