@@ -30,3 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+public/dog.glb
+public/test.glb
+lib/model.js
+components/model.js
