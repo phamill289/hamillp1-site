@@ -3,7 +3,7 @@ import Navbar from '../components/navbar.js'
 import Gitprofile from '../components/gitprofile.js'
 import { Image, Grid, GridItem, Text, Flex, HStack } from '@chakra-ui/react'
 import useSWR from 'swr'
-
+import { motion } from 'framer-motion'
 const fetcher = url => fetch(url).then(r => r.json())
 
 
@@ -33,7 +33,16 @@ export function Gitrepos(props) {
 
     return (
 
+        <motion.div
 
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+            duration: 0.5,
+            delay: 0,
+            ease: [0, 0.71, 0.2, 1.01]
+        }}
+    >
 
 
         <Grid templateColumns='repeat(5, 1fr)' gap={4} >
@@ -141,7 +150,7 @@ export function Gitrepos(props) {
             </GridItem>
 
         </Grid>
-
+</motion.div>
     )
 
 }

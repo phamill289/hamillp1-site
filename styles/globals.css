@@ -17,6 +17,14 @@ body {
   -moz-border-radius: 500px;
 }
 
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+
 * {
   box-sizing: border-box;
 }
