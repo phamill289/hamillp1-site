@@ -85,8 +85,9 @@ export function Gitrepos(props) {
                         {data &&
                             data.map((item, i) => (
 
+                               
 
-                                <Link href={data[i].html_url}>
+                                <Link href={data[i].html_url}  key={data[i].id}>
                                     <a>
                                         <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
                                             <div key={i}>
