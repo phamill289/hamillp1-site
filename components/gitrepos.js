@@ -105,7 +105,7 @@ export function Gitrepos(props) {
                                                 </Text>
                                                 <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
                                             
-                                                    updated on: {(data[i].updated_at).substring(0,10) + " " +(data[i].updated_at).substring(11, 19)}
+                                                    updated on: {(data[i].updated_at).substring(0,10) + " " +(data[i].updated_at).substring(11, 19) + " UTC"}
                                                 </Text>
                                             </div>
                                         </GridItem>
