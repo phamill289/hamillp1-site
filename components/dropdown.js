@@ -37,8 +37,8 @@ export function Dropdown() {
                             <Image src='/sjrail.png' objectFit='contain' />
                         </AspectRatio>
                         <Text >Made with PHP + JS + OpenLayers, a library for creating maps.</Text>
-                        <Text> Demo: <a  class="colored" href='https://phamill289.github.io/sjrail-display/'>  phamill289.github.io/sjrail-display/ </a> </Text>
-                        <Text> Github: <a class="colored" href='https://github.com/phamill289/sjrail-openlayers'>  github.com/phamill289/sjrail-openlayers </a></Text>
+                        <Text> Demo: <a  className="colored" href='https://phamill289.github.io/sjrail-display/'>  phamill289.github.io/sjrail-display/ </a> </Text>
+                        <Text> Github: <a className="colored" href='https://github.com/phamill289/sjrail-openlayers'>  github.com/phamill289/sjrail-openlayers </a></Text>
 
 
                         <Text >Developed for the sjrails wiki as a interactive map that allows wiki pages to be easily added as points, that then redirect to said page.
@@ -97,7 +97,7 @@ export function Dropdown() {
                         <Text>The nav bar dropdown needs work.</Text>
                         <Link  href="https://spencersclone.azurewebsites.net/"> 
                         
-                        <a class="colored"> Hosted via Azure </a>
+                        <a className="colored"> Hosted via Azure </a>
                     
                         </Link> 
 
