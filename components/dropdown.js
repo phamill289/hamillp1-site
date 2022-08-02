@@ -1,5 +1,6 @@
 
 import Link from 'next/link'
+
 import { Text, Image, Box, AspectRatio, Accordion, AccordionBox, AccordionIcon, AccordionItem, AccordionButton, AccordionPanel } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
@@ -36,8 +37,8 @@ export function Dropdown() {
                             <Image src='/sjrail.png' objectFit='contain' />
                         </AspectRatio>
                         <Text >Made with PHP + JS + OpenLayers, a library for creating maps.</Text>
-                        <Text> Demo: <a href='https://phamill289.github.io/sjrail-display/'>  phamill289.github.io/sjrail-display/ </a> </Text>
-                        <Text> Github: <a href='https://github.com/phamill289/sjrail-openlayers'>  github.com/phamill289/sjrail-openlayers </a></Text>
+                        <Text> Demo: <a  class="colored" href='https://phamill289.github.io/sjrail-display/'>  phamill289.github.io/sjrail-display/ </a> </Text>
+                        <Text> Github: <a class="colored" href='https://github.com/phamill289/sjrail-openlayers'>  github.com/phamill289/sjrail-openlayers </a></Text>
 
 
                         <Text >Developed for the sjrails wiki as a interactive map that allows wiki pages to be easily added as points, that then redirect to said page.
@@ -80,6 +81,26 @@ export function Dropdown() {
                         <Text>Made with Next.js + Chakra</Text>
                         <Text>Github section uses their API for data.</Text>
                         <Text >Although I don&apos;t have enough projects to justify a portfolio website, it was more so to get familiar with front end stuff.</Text>
+                    </AccordionPanel>
+                </AccordionItem>
+                <AccordionItem>
+                    <h2>
+                        <AccordionButton>
+                            <Box flex='1' textAlign='left'>
+                                Spencers website clone
+                            </Box>
+                            <AccordionIcon />
+                        </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={4}>
+                        <Text>Recreated the homepage and some subpages w/ net 6.0 + bootstrap to prepare for an interview.</Text>
+                        <Text>The nav bar dropdown needs work.</Text>
+                        <Link  href="https://spencersclone.azurewebsites.net/"> 
+                        
+                        <a class="colored"> Hosted via Azure </a>
+                    
+                        </Link> 
+
                     </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>

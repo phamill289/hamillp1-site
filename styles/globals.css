@@ -48,3 +48,29 @@ body {
   font-weight: normal;
   font-style: light;
 }
+
+
+
+a.colored:link {
+  color: #ED8936;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.colored:visited {
+  color: #ED8936;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.colored:hover {
+  color: #ED8936;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.colored:active {
+  color: #ED8936;
+  background-color: transparent;
+  text-decoration: none;
+}

@@ -85,9 +85,9 @@ export function Gitrepos(props) {
                         {data &&
                             data.map((item, i) => (
 
-                               
 
-                                <Link href={data[i].html_url}  key={data[i].id}>
+
+                                <Link href={data[i].html_url} key={data[i].id}>
                                     <a>
                                         <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
                                             <div key={i}>
@@ -104,8 +104,8 @@ export function Gitrepos(props) {
                                                     language: {data[i].language}
                                                 </Text>
                                                 <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
-                                            
-                                                    updated on: {(data[i].updated_at).substring(0,10) + " " +(data[i].updated_at).substring(11, 19) + " UTC"}
+
+                                                    updated on: {(data[i].updated_at).substring(0, 10) + " " + (data[i].updated_at).substring(11, 19) + " UTC"}
                                                 </Text>
                                             </div>
                                         </GridItem>
@@ -115,8 +115,29 @@ export function Gitrepos(props) {
 
                         }
 
+                        <a href="https://spencersclone.azurewebsites.net/">
+                            <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
+
+                                <Text textColor={'white'} fontSize='20px' paddingLeft={'5px'}>
+
+                                    spencers website clone
+
+                                </Text>
+
+                                <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
+                                    rough recreation of spencersonline.com.
 
 
+
+                                </Text>
+                                <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
+                                    hosted online using azure.
+                                </Text>
+                                <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
+                                    click to visit !
+                                </Text>
+                            </GridItem>
+                        </a>
 
                         <GridItem h='130' bg='#ED8936' border='1px' rounded={'xl'} >
 
@@ -129,7 +150,13 @@ export function Gitrepos(props) {
                             <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
                                 private repo
 
+
                             </Text>
+                            <Text textColor={'white'} paddingLeft={'5px'} fontWeight='normal'>
+
+                                my old discord bot. code needs to be cleaned and some private keys need to be done via environment variables.
+                            </Text>
+
 
                         </GridItem>
 
